@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.5",
+    "nodemon": "3.1.11",
+    "prisma": "^5.12.0",
+    "sequelize": "6.37.7",
+    "zod": "^4.2.1"
+  },
+  "name": "tric",
+  "version": "1.0.0",
+  "description": "Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jegarcia2/tric.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jegarcia2/tric/issues"
+  },
+  "homepage": "https://github.com/jegarcia2/tric#readme"
+}
