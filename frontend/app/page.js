@@ -9,8 +9,6 @@ export default function UserCrudTest() {
 
   const handleGetUser = async (id) => {
     try {
-      console.log('querying id ' + id)
-      console.log(id)
       const data = await getUserById(id);
       setUser(data);
     } catch {

@@ -1,9 +1,8 @@
 import axios from 'axios';
 
-const API_URL = '/api/users'; // relative, backend proxy handles actual host
+const API_URL = '/api/users';
 
 export async function getUserById(id) {
-  console.log(`${API_URL}/${id}`)
   const res = await axios.get(`${API_URL}/${id}`);
   return res.data;
 }

@@ -12,7 +12,6 @@ async function getUserById(id) {
   });
 }
 
-
 async function createUser(data) {
   return await Users.create(data);
 }
