@@ -17,48 +17,58 @@ var _s = __turbopack_context__.k.signature();
 function Home() {
     _s();
     const [user, setUser] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "Home.useEffect": ()=>{
-            __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get('http://localhost:1337/api/user').then({
-                "Home.useEffect": (res)=>setUser(res.data)
-            }["Home.useEffect"]).catch({
-                "Home.useEffect": (err)=>console.error(err)
-            }["Home.useEffect"]);
+    const fetchUser = async ()=>{
+        try {
+            const res = await __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get('http://localhost:1337/api/user');
+            console.log(res);
+            // Adjust depending on Strapi response shape
+            const firstUser = res.data[0]; // no .data.data[0].attributes
+            setUser(firstUser);
+        } catch (err) {
+            console.error(err);
         }
-    }["Home.useEffect"], []);
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                 children: "Main Screen"
             }, void 0, false, {
                 fileName: "[project]/frontend/app/page.js",
-                lineNumber: 17,
+                lineNumber: 24,
                 columnNumber: 7
             }, this),
             user ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 children: [
                     "First user email: ",
-                    user.email || user.message
+                    user.email
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/app/page.js",
-                lineNumber: 19,
+                lineNumber: 26,
                 columnNumber: 9
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                children: "Loading..."
+                children: "No user loaded yet"
             }, void 0, false, {
                 fileName: "[project]/frontend/app/page.js",
-                lineNumber: 21,
+                lineNumber: 28,
                 columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                onClick: fetchUser,
+                children: "Load User"
+            }, void 0, false, {
+                fileName: "[project]/frontend/app/page.js",
+                lineNumber: 30,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/app/page.js",
-        lineNumber: 16,
+        lineNumber: 23,
         columnNumber: 5
     }, this);
 }
-_s(Home, "5s2qRsV95gTJBmaaTh11GoxYeGE=");
+_s(Home, "Iei9RGtZU29Y1RhBe1sbfh/MntA=");
 _c = Home;
 var _c;
 __turbopack_context__.k.register(_c, "Home");

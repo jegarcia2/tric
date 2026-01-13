@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const userController = require('../controllers/user');
+const routesGenerator = require('../utils/routesGenerator');
+const Users = require('../models/users');
 
-// Users
-router.get('/user', userController.getAllUsers);
-router.get('/user/:id', userController.getUserById);
+// CRUD endpoints
+routesGenerator(router, Users, 'users');
 
 module.exports = router;

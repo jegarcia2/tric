@@ -1,3 +1,626 @@
-[00:00:00.961] Server  LOG     ✓ Ready in 592ms
-[00:00:04.727] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:04.853] Browser ERROR   {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"env":{},"headers":{"Accept":"application/json, text/plain, */*"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"http://localhost:1337/api/user","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/9e883_9a1f36b6._.js:3706:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/9e883_9a1f36b6._.js:4221:186)\n    at Axios.request (http://localhost:3000/_next/static/chunks/9e883_9a1f36b6._.js:5025:49)","status":500}
+[00:00:00.942] Server  LOG     ✓ Ready in 569ms
+[00:00:01.951] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:08.375] Server  ERROR   (node:20632) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[00:00:08.422] Browser LOG     querying id 1
+[00:00:08.422] Browser LOG     1
+[00:00:08.422] Browser LOG     /api/users/1
+[00:00:19.340] Browser LOG     querying id 2
+[00:00:19.340] Browser LOG     2
+[00:00:19.340] Browser LOG     /api/users/2
+[00:00:52.382] Browser LOG     querying id 6
+[00:00:52.382] Browser LOG     6
+[00:00:52.382] Browser LOG     /api/users/6
+[00:01:36.018] Server  LOG     ✓ Compiled in 159ms
+[00:01:36.125] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-client] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:36.125] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-ssr] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:42.502] Server  LOG     ✓ Compiled in 38ms
+[00:01:42.567] Server  LOG     ✓ Compiled in 25ms
+[00:01:42.655] Server  LOG     ✓ Compiled in 33ms
+[00:01:42.738] Server  LOG     ✓ Compiled in 35ms
+[00:01:42.849] Server  LOG     ✓ Compiled in 37ms
+[00:01:42.849] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-client] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:42.849] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-ssr] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:42.849] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-client] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:42.849] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-ssr] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:42.849] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-client] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:42.849] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-ssr] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:42.849] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-client] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:42.849] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-ssr] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:42.932] Server  LOG     ✓ Compiled in 40ms
+[00:01:43.042] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-client] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:43.042] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-ssr] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:43.042] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-client] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:43.042] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-ssr] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:43.084] Server  LOG     ✓ Compiled in 32ms
+[00:01:43.197] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-client] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:43.197] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-ssr] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:43.202] Server  LOG     ✓ Compiled in 50ms
+[00:01:43.307] Server  LOG     ✓ Compiled in 35ms
+[00:01:43.308] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-client] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:43.308] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-ssr] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:43.356] Server  LOG     ✓ Compiled in 39ms
+[00:01:43.457] Server  LOG     ✓ Compiled in 39ms
+[00:01:43.558] Server  LOG     ✓ Compiled in 37ms
+[00:01:43.559] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-client] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:43.559] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-ssr] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:43.559] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-client] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:43.559] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-ssr] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:43.559] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-client] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:43.559] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-ssr] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:43.663] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-client] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:43.663] Browser ERROR   ./frontend/app/page.js:4:1
+Export softDeleteUser doesn't exist in target module
+  2 | import { useState } from 'react';
+  3 | import { Input, Button, Form, Table, message } from 'antd';
+> 4 | import { getUserById, createUser, softDeleteUser, getAllUsers } from '../services/userService';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function UserCrudTest() {
+  7 |   const [user, setUser] = useState(null);
+
+The export softDeleteUser was not found in module [project]/frontend/services/userService.js [app-ssr] (ecmascript).
+Did you mean to import deleteUser?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.js [Client Component Browser]
+    ./frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.js [Client Component SSR]
+    ./frontend/app/page.js [Server Component]
+[00:01:47.237] Server  ERROR   ⨯ ChunkLoadError: Failed to load chunk server/chunks/ssr/[root-of-the-server]__d132af4d._.js from module [project]/frontend/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/frontend/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/frontend/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/frontend/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/frontend/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/frontend/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/frontend/app/page.js [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:01:47.746] Server  ERROR   ChunkLoadError: Failed to load chunk server/chunks/ssr/[root-of-the-server]__d132af4d._.js from module [project]/frontend/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/frontend/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/frontend/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/frontend/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/frontend/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/frontend/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/frontend/app/page.js [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:01:48.189] Server  ERROR   ⨯ "unhandledRejection:" ChunkLoadError: Failed to load chunk server/chunks/ssr/[root-of-the-server]__d132af4d._.js from module [project]/frontend/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/frontend/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/frontend/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/frontend/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/frontend/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/frontend/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/frontend/app/page.js [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:01:48.546] Server  ERROR   ⨯ "unhandledRejection: " ChunkLoadError: Failed to load chunk server/chunks/ssr/[root-of-the-server]__d132af4d._.js from module [project]/frontend/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/frontend/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/frontend/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/frontend/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/frontend/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/frontend/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/frontend/app/page.js [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:01:48.951] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:48.993] Server  LOG     ✓ Compiled in 0ms
+[00:01:51.347] Server  LOG     ✓ Compiled in 65ms
+[00:02:05.418] Server  LOG     ✓ Compiled in 40ms
+[00:02:26.771] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:22.808] Browser LOG     querying id 1
+[00:04:22.809] Browser LOG     1
+[00:04:22.809] Browser LOG     /api/users/1
+[00:04:24.426] Browser LOG     querying id 6
+[00:04:24.426] Browser LOG     6
+[00:04:24.426] Browser LOG     /api/users/6
+[00:04:56.863] Browser LOG     querying id 6
+[00:04:56.863] Browser LOG     6
+[00:04:56.863] Browser LOG     /api/users/6
+[00:05:00.251] Browser LOG     querying id 5
+[00:05:00.251] Browser LOG     5
+[00:05:00.251] Browser LOG     /api/users/5
+[00:05:32.447] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:35.262] Browser LOG     querying id 5
+[00:05:35.262] Browser LOG     5
+[00:05:35.262] Browser LOG     /api/users/5
+[00:05:37.169] Browser LOG     querying id 6
+[00:05:37.169] Browser LOG     6
+[00:05:37.169] Browser LOG     /api/users/6
